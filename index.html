@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand"><i class="fas fa-tasks"></i>&nbsp;&nbsp;Faculty Management System</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>Hi,Malya</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <table class="table">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Qualification</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Trash</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td><i class="fas fa-pen-nib"></i></td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-md-4">
+                <form class="form-horizontal" role="form" name="myForm">
+                    <h2>Registration Form</h2><br/><br/>
+
+                    <div class="form-group">
+                        <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="firstName" placeholder="Enter Your Name" name="name" class="form-control" autofocus>
+                        </div>
+                    </div>
+                    <div id="validate_name"></div><br/>
+
+                    <div class="form-group">
+                        <label for="firstName" class="col-sm-3 control-label">Qualification</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="quali" name="quali" placeholder="Enter Your Qualification" class="form-control" autofocus>
+                        </div>
+                    </div>
+                    <div id="validate_quali"></div><br/>
+
+                    <div class="form-group">
+                        <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                        <div class="col-sm-9">
+                            <input type="date" id="birthDate" name="date" class="form-control">
+                        </div>
+                    </div>
+                    <div id="validate_date"></div><br/>
+
+                    <div class="form-group">
+                        <label for="country" class="col-sm-3 control-label">Department</label>
+                        <div class="col-sm-9">
+                            <select id="dept" name="dept" class="form-control">
+                                <option>Select Department</option>
+                                <option>ISE</option>
+                                <option>CSE</option>
+                                <option>EC</option>
+                            </select>
+                        </div>
+                    </div><div id="validate_dept"></div><br/>
+
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3">
+                            <button type="submit" class="btn btn-success btn-block" onclick="return validate()">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a2d9fe4007.js"></script>
+</body>
+
+</html>
